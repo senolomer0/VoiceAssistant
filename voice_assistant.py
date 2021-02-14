@@ -154,7 +154,7 @@ class Voice_Assistant():
                     self.speak(sentence)
                 except:
                     try:
-                        client = wolframalpha.Client("VAPTK3-WPWUKRH9RQ")
+                        client = wolframalpha.Client("YOUR API KEY")
                         res = client.query(self.phrase)
                         print(next(res.results).text)
                         self.speak(next(res.results).text)
@@ -197,7 +197,7 @@ class Voice_Assistant():
                
             else:
                 try:
-                    client = wolframalpha.Client("VAPTK3-WPWUKRH9RQ")
+                    client = wolframalpha.Client("YOUR API KEY")
                     res = client.query(self.phrase)
                     print(next(res.results).text)
                     self.speak(next(res.results).text)
